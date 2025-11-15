@@ -58,8 +58,8 @@ pip install -r requirements.txt
 
 **Option 1: Interactive HTML Version (Recommended)**
 Access the web-based planner directly in your browser:
-- Open `index.html` in any web browser
-- Click "📱 Use Digital Planner" to access the interactive version
+- Visit: **https://gregdyche.github.io/turtle/**
+- Click "🐢 View Turtle Planner" to access the interactive version
 - Type directly into the forms, save, or print as needed
 - Perfect for digital planning and quick access
 
