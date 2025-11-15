@@ -36,8 +36,9 @@ turtletalk/
 - **Pay Yourself First**: Daily personal project commitment
 - **The Non-Agenda**: Three things to stop doing
 
-### 2. Quarterly Review (`turtleplanner.py:120-168`)
-- **DICE Framework**: Duration, Integrity, Commitment, Effort ratings (1-5 scale)
+### 2. Quarterly Review (`turtleplanner.py:120-185`)
+- **Turtle Assessment Framework**: Direction, Consistency, Balance, Energy ratings (1-4 scale)
+- **Score Interpretation**: 4-8 (Steady Progress), 9-12 (Adjustment Zone), 13-16 (Reset Zone)
 - **The Scorecard**: Relationship and values reflection
 - **Re-tuning the Compass**: Quarterly adjustments
 

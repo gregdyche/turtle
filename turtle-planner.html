@@ -243,42 +243,50 @@
         <div class="page">
             <div class="page-title">🐢 QUARTERLY REVIEW</div>
             
-            <div class="section-title">QUARTERLY DICE CHECK-IN (EARLY ALARM)</div>
+            <div class="section-title">QUARTERLY TURTLE CHECK-IN (COURSE CORRECTION)</div>
             <div class="prompt">
-                Review the past 90 days. Rate your primary project/goal on a scale of 1-5 (1=Excellent, 5=Alarm sounding):
+                Review the past 90 days using the turtle methodology. Rate each factor on a scale of 1-4 (1=Excellent, 4=Needs Attention):
             </div>
             
             <table class="dice-table">
                 <thead>
                     <tr>
-                        <th>Factor</th>
-                        <th>Rating (1-5)</th>
-                        <th>Notes</th>
+                        <th>Turtle Factor</th>
+                        <th>Rating (1-4)</th>
+                        <th>Reflection Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Duration</strong><br>Is the current pace sustainable?</td>
-                        <td><input type="number" class="rating-input" min="1" max="5"></td>
-                        <td><textarea rows="2"></textarea></td>
+                        <td><strong>Direction</strong><br>Am I moving steadily toward my Eastward Gaze? Is my daily progress aligned with my yearly destination?</td>
+                        <td><input type="number" class="rating-input" min="1" max="4"></td>
+                        <td><textarea rows="2" placeholder="How well am I staying on course?"></textarea></td>
                     </tr>
                     <tr>
-                        <td><strong>Integrity</strong><br>Did I adhere to the plan/routine?</td>
-                        <td><input type="number" class="rating-input" min="1" max="5"></td>
-                        <td><textarea rows="2"></textarea></td>
+                        <td><strong>Consistency</strong><br>Am I maintaining steady, sustainable progress? Are my habits and routines working?</td>
+                        <td><input type="number" class="rating-input" min="1" max="4"></td>
+                        <td><textarea rows="2" placeholder="How consistent has my daily practice been?"></textarea></td>
                     </tr>
                     <tr>
-                        <td><strong>Commitment</strong><br>C1: My own belief. C2: Others' support.</td>
-                        <td><input type="number" class="rating-input" min="1" max="5"></td>
-                        <td><textarea rows="2"></textarea></td>
+                        <td><strong>Balance</strong><br>Am I protecting my A-Zone time while maintaining healthy relationships and self-care?</td>
+                        <td><input type="number" class="rating-input" min="1" max="4"></td>
+                        <td><textarea rows="2" placeholder="How well am I balancing priorities?"></textarea></td>
                     </tr>
                     <tr>
-                        <td><strong>Effort</strong><br>Is the required effort burning me out?</td>
-                        <td><input type="number" class="rating-input" min="1" max="5"></td>
-                        <td><textarea rows="2"></textarea></td>
+                        <td><strong>Energy</strong><br>Do I feel energized by my work? Am I avoiding burnout while maintaining momentum?</td>
+                        <td><input type="number" class="rating-input" min="1" max="4"></td>
+                        <td><textarea rows="2" placeholder="How sustainable is my current pace?"></textarea></td>
                     </tr>
                 </tbody>
             </table>
+            
+            <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
+                <p style="font-weight: bold; margin-bottom: 10px;">🐢 Turtle Score Interpretation:</p>
+                <p style="font-size: 10px; margin: 5px 0;"><strong>4-8 points:</strong> 🟢 Steady Progress Zone - The turtle is on course</p>
+                <p style="font-size: 10px; margin: 5px 0;"><strong>9-12 points:</strong> 🟡 Adjustment Zone - Time for minor course corrections</p>
+                <p style="font-size: 10px; margin: 5px 0;"><strong>13-16 points:</strong> 🔴 Reset Zone - Need significant changes to get back on track</p>
+                <p style="font-size: 9px; color: #666; margin-top: 10px;">Total Score: <input type="number" style="width: 40px; margin: 0 5px;" readonly> (Add your ratings above)</p>
+            </div>
             
             <div class="section-title">THE SCORECARD</div>
             <div class="prompt">

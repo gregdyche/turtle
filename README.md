@@ -32,7 +32,7 @@ Unlike typical productivity systems that focus on speed and efficiency, the turt
 - **Turtle-themed styling** with consistent design across all formats
 
 ✅ **Proven Frameworks**
-- **DICE Assessment**: Duration, Integrity, Commitment, Effort evaluation
+- **Turtle Assessment**: Direction, Consistency, Balance, Energy evaluation
 - **A/B/C Zone Prioritization**: Clear task categorization
 - **Pay Yourself First**: Protected time for personal growth projects
 
@@ -63,7 +63,12 @@ Access the web-based planner directly in your browser:
 - Type directly into the forms, save, or print as needed
 - Perfect for digital planning and quick access
 
-**Option 2: Generate PDF Version**
+**Option 2: Download PDF Version**
+- **Direct Download**: Click "📄 Download PDF Planner" on the website
+- **GitHub Release**: Download from the latest release
+- **Auto-Generated**: PDF is automatically updated when code changes
+
+**Option 3: Generate PDF Yourself**
 ```bash
 python turtleplanner.py
 ```
@@ -91,11 +96,11 @@ Set your annual direction with four key sections:
 - **The Non-Agenda**: Three specific things you'll stop doing
 
 ### 🔍 Quarterly Review
-Assess your progress using the DICE framework:
-- **Duration**: Is your current pace sustainable?
-- **Integrity**: Are you adhering to your plan?
-- **Commitment**: Your belief and others' support (C1/C2)
-- **Effort**: Is the required effort burning you out?
+Assess your progress using the turtle methodology framework:
+- **Direction**: Are you moving steadily toward your Eastward Gaze?
+- **Consistency**: Are you maintaining sustainable progress and working habits?
+- **Balance**: Are you protecting A-Zone time while maintaining relationships?
+- **Energy**: Do you feel energized by your work without burning out?
 
 ### 🗓️ Monthly Preview
 Plan your month strategically:

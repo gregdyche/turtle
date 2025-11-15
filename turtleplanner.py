@@ -121,19 +121,19 @@ def create_planner(filename='turtle_diaries_planner.pdf'):
     story.append(Paragraph("🐢 QUARTERLY REVIEW", title_style))
     story.append(Spacer(1, 0.2*inch))
     
-    story.append(Paragraph("QUARTERLY DICE CHECK-IN (EARLY ALARM)", section_style))
+    story.append(Paragraph("QUARTERLY TURTLE CHECK-IN (COURSE CORRECTION)", section_style))
     story.append(Paragraph(
-        "Review the past 90 days. Rate your primary project/goal on a scale of 1-5 (1=Excellent, 5=Alarm sounding):",
+        "Review the past 90 days using the turtle methodology. Rate each factor on a scale of 1-4 (1=Excellent, 4=Needs Attention):",
         prompt_style
     ))
     
-    # DICE Table
+    # Turtle Assessment Table
     dice_data = [
-        ['Factor', 'Rating (1-5)', 'Notes'],
-        ['Duration\nIs the current pace sustainable?', '', ''],
-        ['Integrity\nDid I adhere to the plan/routine?', '', ''],
-        ['Commitment\nC1: My own belief. C2: Others\' support.', '', ''],
-        ['Effort\nIs the required effort burning me out?', '', '']
+        ['Turtle Factor', 'Rating (1-4)', 'Reflection Notes'],
+        ['Direction\nAm I moving steadily toward my Eastward Gaze?\nIs my daily progress aligned with my yearly destination?', '', ''],
+        ['Consistency\nAm I maintaining steady, sustainable progress?\nAre my habits and routines working?', '', ''],
+        ['Balance\nAm I protecting my A-Zone time while maintaining\nhealthy relationships and self-care?', '', ''],
+        ['Energy\nDo I feel energized by my work? Am I avoiding\nburnout while maintaining momentum?', '', '']
     ]
     
     dice_table = Table(dice_data, colWidths=[2.2*inch, 0.8*inch, 3.5*inch])
@@ -149,8 +149,31 @@ def create_planner(filename='turtle_diaries_planner.pdf'):
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
     ]))
     story.append(dice_table)
-    story.append(Spacer(1, 0.3*inch))
+    story.append(Spacer(1, 0.2*inch))
     
+    # Turtle Score Interpretation Box
+    interpretation_style = ParagraphStyle(
+        'Interpretation',
+        parent=styles['Normal'],
+        fontSize=9,
+        textColor=HexColor('#2c3e50'),
+        backColor=HexColor('#f8f9fa'),
+        borderPadding=12,
+        borderColor=HexColor('#16a085'),
+        borderWidth=1,
+        spaceAfter=15
+    )
+    
+    story.append(Paragraph("🐢 <b>Turtle Score Interpretation:</b>", interpretation_style))
+    story.append(Paragraph(
+        "<b>4-8 points:</b> 🟢 Steady Progress Zone - The turtle is on course<br/>"
+        "<b>9-12 points:</b> 🟡 Adjustment Zone - Time for minor course corrections<br/>"
+        "<b>13-16 points:</b> 🔴 Reset Zone - Need significant changes to get back on track<br/><br/>"
+        "Total Score: _____ (Add your ratings above)",
+        interpretation_style
+    ))
+    
+    story.append(Spacer(1, 0.2*inch))
     story.append(Paragraph("THE SCORECARD", section_style))
     story.append(Paragraph(
         "How did I treat others this quarter? How did I live up to my values in my key relationships?",
