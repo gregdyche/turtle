@@ -1,5 +1,5 @@
 """
-Turtle Diaries Planner Generator
+Turtle Practice Planner Generator
 Generates a PDF planner with 5 page templates
 """
 

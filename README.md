@@ -1,4 +1,4 @@
-# 🐢 TurtleTalk
+# 🐢 Turtle Practice
 
 *A slow, steady, and deliberate approach to personal productivity and goal achievement*
 
@@ -7,9 +7,9 @@
 
 ## Overview
 
-TurtleTalk is a personal productivity planner system that generates a comprehensive PDF planner based on the **turtle methodology** - emphasizing consistent, deliberate progress toward meaningful goals through regular reflection and intentional planning.
+A personal productivity planner based on the **turtle practice** - emphasizing consistent, deliberate progress toward meaningful goals through regular reflection and intentional planning.
 
-Unlike typical productivity systems that focus on speed and efficiency, the turtle methodology embraces:
+Unlike typical productivity systems that focus on speed and efficiency, the turtle practice embraces:
 - 🎯 **Clear Direction**: Setting an "Eastward Gaze" - your true destination
 - 🔄 **Regular Reflection**: Daily, weekly, quarterly, and yearly review cycles
 - ⚡ **A-Zone Protection**: Safeguarding time for your most important work
@@ -26,7 +26,7 @@ Unlike typical productivity systems that focus on speed and efficiency, the turt
 - 📝 **Daily Page**: Morning start, midday check-in, evening reflection
 
 ✅ **Multiple Format Options**
-- **Interactive HTML Version**: Type directly in browser, save digitally
+- **HTML Version**: Type directly in browser, print as needed
 - **Professional PDF Output**: Clean, printable design for physical planning
 - **GitHub Pages Hosting**: Access from anywhere via web browser
 - **Turtle-themed styling** with consistent design across all formats
@@ -56,12 +56,12 @@ pip install -r requirements.txt
 
 ### Use the Planner
 
-**Option 1: Interactive HTML Version (Recommended)**
+**Option 1: HTML Version (Recommended)**
 Access the web-based planner directly in your browser:
 - Visit: **https://gregdyche.github.io/turtle/**
-- Click "🐢 View Turtle Planner" to access the interactive version
-- Type directly into the forms, save, or print as needed
-- Perfect for digital planning and quick access
+- Click "🐢 View Turtle Planner" to access the planner
+- Type directly into the forms and print as needed
+- Perfect for immediate use and printing
 
 **Option 2: Download PDF Version**
 - **Direct Download**: Click "📄 Download PDF Planner" on the website
@@ -96,7 +96,7 @@ Set your annual direction with four key sections:
 - **The Non-Agenda**: Three specific things you'll stop doing
 
 ### 🔍 Quarterly Review
-Assess your progress using the turtle methodology framework:
+Assess your progress using the turtle practice framework:
 - **Direction**: Are you moving steadily toward your Eastward Gaze?
 - **Consistency**: Are you maintaining sustainable progress and working habits?
 - **Balance**: Are you protecting A-Zone time while maintaining relationships?
@@ -184,7 +184,7 @@ Contributions are welcome! Here are some ways you can help:
 
 ## Philosophy & Inspiration
 
-The turtle methodology draws inspiration from the deliberate, purposeful movement of sea turtles during migration. Despite their slow pace, turtles navigate thousands of miles with remarkable precision to reach their destinations.
+The turtle practice draws inspiration from the deliberate, purposeful movement of sea turtles during migration. Despite their slow pace, turtles navigate thousands of miles with remarkable precision to reach their destinations.
 
 Similarly, this planner system encourages:
 - **Deliberate movement** over frantic activity

@@ -32,7 +32,7 @@ jobs:
         python turtleplanner.py
         
     - name: Upload PDF as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: turtle-diaries-planner
         path: turtle_diaries_planner.pdf

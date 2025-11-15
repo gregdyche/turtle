@@ -1,7 +1,7 @@
-# TurtleTalk Project Memory
+# Turtle Practice Project Memory
 
 ## Project Overview
-**TurtleTalk** is a personal productivity planner system based on "turtle methodology" - a slow, steady, and deliberate approach to goal achievement and personal development. The project generates a comprehensive PDF planner with five distinct page templates.
+**Turtle Practice** is a personal productivity planner system based on "turtle practice" - a slow, steady, and deliberate approach to goal achievement and personal development. The project generates a comprehensive PDF planner with five distinct page templates.
 
 ## Project Structure
 ```
