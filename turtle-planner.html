@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐢 Turtle Diaries Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page {
+            background: white;
+            margin: 20px 0;
+            padding: 0.5in;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            page-break-after: always;
+            min-height: 11in;
+        }
+
+        .page-title {
+            font-size: 20px;
+            color: #16a085;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #16a085;
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 15px 0 10px 0;
+            padding-left: 10px;
+            border-left: 4px solid #16a085;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .prompt {
+            font-size: 10px;
+            color: #555555;
+            font-style: italic;
+            background-color: #f8f9fa;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .writing-space {
+            border-bottom: 1px solid #bdc3c7;
+            margin: 10px 0;
+            min-height: 40px;
+            padding: 5px 0;
+        }
+
+        .large-writing-space {
+            min-height: 120px;
+        }
+
+        .medium-writing-space {
+            min-height: 80px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .checklist-item input[type="text"] {
+            flex: 1;
+            border: none;
+            border-bottom: 1px solid #bdc3c7;
+            padding: 5px;
+            font-size: 11px;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            margin: 15px 0;
+            border: 1px solid #bdc3c7;
+        }
+
+        .calendar-header {
+            background-color: #16a085;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .calendar-cell {
+            border: 1px solid #bdc3c7;
+            height: 60px;
+            padding: 2px;
+        }
+
+        .dice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .dice-table th {
+            background-color: #ecf0f1;
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .dice-table td {
+            border: 1px solid #bdc3c7;
+            padding: 8px;
+            font-size: 9px;
+            height: 40px;
+            vertical-align: top;
+        }
+
+        .rating-input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #bdc3c7;
+            padding: 2px;
+        }
+
+        .month-year-input {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .week-input {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .day-date-input {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .inline-checkbox {
+            margin-right: 20px;
+        }
+
+        input[type="text"], textarea {
+            font-family: inherit;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #bdc3c7;
+            padding: 8px;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        @media print {
+            body { background: white; }
+            .container { max-width: none; margin: 0; padding: 0; }
+            .page { box-shadow: none; margin: 0; page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- PAGE 1: YEARLY OUTLOOK -->
+        <div class="page">
+            <div class="page-title">🐢 THE TURTLE DIARIES: YEARLY OUTLOOK</div>
+            
+            <div class="section-title">MY EASTWARD GAZE: YEARLY DIRECTION</div>
+            <div class="prompt">
+                The Destination: What is the single most important thing I want to be remembered for this year? (The ship's one destination.)
+            </div>
+            <div class="writing-space large-writing-space"></div>
+            
+            <div class="section-title">THE MUST-BE</div>
+            <div class="prompt">
+                What is one thing I can be that I must be this year (personal growth, skill mastery, etc.)?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">PAY YOURSELF FIRST (A-ZONE COMMITMENT)</div>
+            <div class="prompt">
+                What is the most important personal project (writing, side hustle, health) that I will schedule time for every single day?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">THE NON-AGENDA (WHAT I WILL NOT DO)</div>
+            <div class="prompt">
+                What are three specific things I am going to stop doing to free up time and energy for the Turtle's path?
+            </div>
+            
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="First thing to stop doing...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Second thing to stop doing...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Third thing to stop doing...">
+            </div>
+        </div>
+
+        <!-- PAGE 2: QUARTERLY REVIEW -->
+        <div class="page">
+            <div class="page-title">🐢 QUARTERLY REVIEW</div>
+            
+            <div class="section-title">QUARTERLY DICE CHECK-IN (EARLY ALARM)</div>
+            <div class="prompt">
+                Review the past 90 days. Rate your primary project/goal on a scale of 1-5 (1=Excellent, 5=Alarm sounding):
+            </div>
+            
+            <table class="dice-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Rating (1-5)</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Duration</strong><br>Is the current pace sustainable?</td>
+                        <td><input type="number" class="rating-input" min="1" max="5"></td>
+                        <td><textarea rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Integrity</strong><br>Did I adhere to the plan/routine?</td>
+                        <td><input type="number" class="rating-input" min="1" max="5"></td>
+                        <td><textarea rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Commitment</strong><br>C1: My own belief. C2: Others' support.</td>
+                        <td><input type="number" class="rating-input" min="1" max="5"></td>
+                        <td><textarea rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Effort</strong><br>Is the required effort burning me out?</td>
+                        <td><input type="number" class="rating-input" min="1" max="5"></td>
+                        <td><textarea rows="2"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="section-title">THE SCORECARD</div>
+            <div class="prompt">
+                How did I treat others this quarter? How did I live up to my values in my key relationships?
+            </div>
+            <div class="writing-space large-writing-space"></div>
+            
+            <div class="section-title">RE-TUNING THE COMPASS</div>
+            <div class="prompt">
+                Based on the review, what is one minor adjustment I will make to my Yearly Direction or daily routine for the next quarter?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+        </div>
+
+        <!-- PAGE 3: MONTHLY PREVIEW -->
+        <div class="page">
+            <div class="page-title">🐢 MONTHLY PREVIEW</div>
+            
+            <div class="section-title">MONTHLY CALENDAR GRID</div>
+            <div class="month-year-input">
+                Month: <input type="text" style="width: 120px;"> Year: <input type="text" style="width: 80px;">
+            </div>
+            
+            <div class="calendar-grid">
+                <div class="calendar-header">Sun</div>
+                <div class="calendar-header">Mon</div>
+                <div class="calendar-header">Tue</div>
+                <div class="calendar-header">Wed</div>
+                <div class="calendar-header">Thu</div>
+                <div class="calendar-header">Fri</div>
+                <div class="calendar-header">Sat</div>
+                
+                <!-- 35 calendar cells for 5 weeks -->
+                <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+                <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+                <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+                <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+                <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+            </div>
+            
+            <div class="section-title">MONTHLY BIG ROCKS</div>
+            <div class="prompt">
+                List 3 major projects or milestones I need to achieve this month to stay on the Yearly Path.
+            </div>
+            
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="First major monthly milestone...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Second major monthly milestone...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Third major monthly milestone...">
+            </div>
+        </div>
+
+        <!-- PAGE 4: WEEKLY PLANNING & REFLECTION -->
+        <div class="page">
+            <div class="page-title">🐢 WEEKLY PLANNING & REFLECTION</div>
+            <div class="week-input">
+                Week of: <input type="date"> to <input type="date">
+            </div>
+            
+            <div class="section-title">WEEKLY INTENTIONS (FORWARD-LOOKING)</div>
+            <div class="prompt">
+                Call Your Shots: List 5 specific, small actions or tasks I intend to complete this week to move Eastward. (Must be measurable.)
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <div class="checklist-item">
+                    <input type="checkbox">
+                    <input type="text" placeholder="First weekly intention...">
+                </div>
+                <div class="checkbox-group" style="margin-left: 30px; font-size: 8px; color: #7f8c8d;">
+                    Status: <label class="inline-checkbox"><input type="checkbox"> DONE</label>
+                    <label class="inline-checkbox"><input type="checkbox"> MISSED</label>
+                    | Reason if missed: <label class="inline-checkbox"><input type="checkbox"> WON'T DO</label>
+                    <label class="inline-checkbox"><input type="checkbox"> CAN'T DO</label>
+                </div>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <div class="checklist-item">
+                    <input type="checkbox">
+                    <input type="text" placeholder="Second weekly intention...">
+                </div>
+                <div class="checkbox-group" style="margin-left: 30px; font-size: 8px; color: #7f8c8d;">
+                    Status: <label class="inline-checkbox"><input type="checkbox"> DONE</label>
+                    <label class="inline-checkbox"><input type="checkbox"> MISSED</label>
+                    | Reason if missed: <label class="inline-checkbox"><input type="checkbox"> WON'T DO</label>
+                    <label class="inline-checkbox"><input type="checkbox"> CAN'T DO</label>
+                </div>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <div class="checklist-item">
+                    <input type="checkbox">
+                    <input type="text" placeholder="Third weekly intention...">
+                </div>
+                <div class="checkbox-group" style="margin-left: 30px; font-size: 8px; color: #7f8c8d;">
+                    Status: <label class="inline-checkbox"><input type="checkbox"> DONE</label>
+                    <label class="inline-checkbox"><input type="checkbox"> MISSED</label>
+                    | Reason if missed: <label class="inline-checkbox"><input type="checkbox"> WON'T DO</label>
+                    <label class="inline-checkbox"><input type="checkbox"> CAN'T DO</label>
+                </div>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <div class="checklist-item">
+                    <input type="checkbox">
+                    <input type="text" placeholder="Fourth weekly intention...">
+                </div>
+                <div class="checkbox-group" style="margin-left: 30px; font-size: 8px; color: #7f8c8d;">
+                    Status: <label class="inline-checkbox"><input type="checkbox"> DONE</label>
+                    <label class="inline-checkbox"><input type="checkbox"> MISSED</label>
+                    | Reason if missed: <label class="inline-checkbox"><input type="checkbox"> WON'T DO</label>
+                    <label class="inline-checkbox"><input type="checkbox"> CAN'T DO</label>
+                </div>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <div class="checklist-item">
+                    <input type="checkbox">
+                    <input type="text" placeholder="Fifth weekly intention...">
+                </div>
+                <div class="checkbox-group" style="margin-left: 30px; font-size: 8px; color: #7f8c8d;">
+                    Status: <label class="inline-checkbox"><input type="checkbox"> DONE</label>
+                    <label class="inline-checkbox"><input type="checkbox"> MISSED</label>
+                    | Reason if missed: <label class="inline-checkbox"><input type="checkbox"> WON'T DO</label>
+                    <label class="inline-checkbox"><input type="checkbox"> CAN'T DO</label>
+                </div>
+            </div>
+            
+            <div class="section-title">A-ZONE PROTECTION: BLOCK TIME</div>
+            <div class="prompt">
+                Block out a specific time slot on each day this week for my Pay Yourself First project.
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">WEEKLY LEARNING & ADJUSTMENT</div>
+            <div class="prompt">
+                What is the one small adjustment I will make to my routine next week to better align my intentions with my actions?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+        </div>
+
+        <!-- PAGE 5: DAILY PAGE -->
+        <div class="page">
+            <div class="page-title">🐢 DAILY PAGE</div>
+            <div class="day-date-input">
+                DAY: <input type="text" style="width: 120px;"> DATE: <input type="date">
+            </div>
+            
+            <div class="section-title">MORNING (START HERE)</div>
+            <div class="prompt">
+                What is the single, deliberate step I will take first thing this morning?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">A-ZONE SCHEDULED BLOCK</div>
+            <div class="prompt">
+                The one major task scheduled for the A-Zone
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">MID-DAY EXAMEN (NOON CHECK-IN)</div>
+            <div class="prompt">
+                Check-In: 1. Am I on-track? 2. Am I having fun (getting energy from my work)?
+            </div>
+            <div class="checkbox-group">
+                On-track: <label class="inline-checkbox"><input type="checkbox"> Yes</label>
+                <label class="inline-checkbox"><input type="checkbox"> No</label><br>
+                Having fun: <label class="inline-checkbox"><input type="checkbox"> Yes</label>
+                <label class="inline-checkbox"><input type="checkbox"> No</label>
+            </div>
+            
+            <div class="section-title">B-ZONE/C-ZONE TASKS</div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Secondary task...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Secondary task...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Secondary task...">
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Secondary task...">
+            </div>
+            
+            <div class="section-title">EVENING REFLECTION</div>
+            <div class="prompt">
+                1. What small act of love/sacrifice did I practice today? 2. What can I prep today to make tomorrow a better day?
+            </div>
+            <div class="writing-space medium-writing-space"></div>
+            
+            <div class="section-title">NOTES & SCRATCHPAD</div>
+            <textarea style="min-height: 120px;" placeholder="Free-form notes and thoughts..."></textarea>
+        </div>
+    </div>
+</body>
+</html>

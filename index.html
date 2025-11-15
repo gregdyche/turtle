@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐢 TurtleTalk - Digital Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #16a085 0%, #2c3e50 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #16a085;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #16a085;
+        }
+
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .feature-card ul {
+            color: #666;
+            margin-left: 20px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 40px;
+            background: linear-gradient(45deg, #16a085, #1abc9c);
+            border-radius: 12px;
+            color: white;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: white;
+            color: #16a085;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .methodology {
+            background: #ecf0f1;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .methodology h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .principle {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .principle-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .principle h3 {
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        .principle p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .header p { font-size: 1rem; }
+            .main-content { padding: 20px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🐢 TurtleTalk</h1>
+            <p>A slow, steady, and deliberate approach to personal productivity</p>
+        </header>
+
+        <main class="main-content">
+            <section class="intro">
+                <h2>Welcome to the Turtle Methodology</h2>
+                <p>Unlike typical productivity systems that focus on speed and efficiency, TurtleTalk embraces the wisdom of the turtle: consistent, deliberate progress toward meaningful goals.</p>
+                <p>This digital planner provides interactive templates for planning and reflection across five time horizons: yearly, quarterly, monthly, weekly, and daily.</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <h3>🎯 Yearly Outlook</h3>
+                    <p>Set your "Eastward Gaze" - your true destination for the year.</p>
+                    <ul>
+                        <li>Define your Must-Be commitment</li>
+                        <li>Establish Pay Yourself First project</li>
+                        <li>Create your Non-Agenda (what to stop)</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔍 Quarterly Review</h3>
+                    <p>Use the DICE framework to assess your progress.</p>
+                    <ul>
+                        <li>Duration: Is your pace sustainable?</li>
+                        <li>Integrity: Are you following your plan?</li>
+                        <li>Commitment: Your belief and support system</li>
+                        <li>Effort: Are you burning out?</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🗓️ Monthly Preview</h3>
+                    <p>Plan your month strategically with visual tools.</p>
+                    <ul>
+                        <li>Interactive calendar grid</li>
+                        <li>Monthly Big Rocks identification</li>
+                        <li>Milestone tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📋 Weekly Planning</h3>
+                    <p>Bridge strategy and daily action.</p>
+                    <ul>
+                        <li>Five specific weekly intentions</li>
+                        <li>A-Zone time protection</li>
+                        <li>Learning and adjustment cycles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📝 Daily Pages</h3>
+                    <p>Your daily navigation tool.</p>
+                    <ul>
+                        <li>Morning deliberate start</li>
+                        <li>Midday check-in (on-track? having fun?)</li>
+                        <li>Evening reflection and prep</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💾 Digital Convenience</h3>
+                    <p>Interactive web-based planning.</p>
+                    <ul>
+                        <li>Type directly into forms</li>
+                        <li>Print or save as needed</li>
+                        <li>Access from any device</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Start Your Turtle Journey</h2>
+                <p>Choose your preferred format and begin planning with intention</p>
+                <a href="turtle-planner.html" class="btn">📱 Use Digital Planner</a>
+                <a href="turtleplanner.py" class="btn btn-secondary">🐍 Generate PDF Version</a>
+            </section>
+
+            <section class="methodology">
+                <h2>The Turtle Methodology</h2>
+                <div class="principles">
+                    <div class="principle">
+                        <div class="principle-icon">🧭</div>
+                        <h3>Eastward Direction</h3>
+                        <p>Like migrating turtles, maintain clear directional movement toward your true destination</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">⚡</div>
+                        <h3>A-Zone First</h3>
+                        <p>Protect time for your most important work before everything else claims your energy</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">🔄</div>
+                        <h3>Regular Reflection</h3>
+                        <p>Build in systematic review cycles to stay on course and make necessary adjustments</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">⚖️</div>
+                        <h3>Intentional Balance</h3>
+                        <p>Deliberately choose what to pursue and what to eliminate from your life</p>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-icon">🌱</div>
+                        <h3>Sustainable Growth</h3>
+                        <p>Focus on consistency over intensity for lasting change and personal development</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Remember: The turtle wins the race not through speed, but through persistence and direction. 🐢</p>
+            <p><a href="https://github.com/gregdyche/turtle" style="color: white;">View on GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
