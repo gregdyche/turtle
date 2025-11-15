@@ -190,11 +190,52 @@
             opacity: 0.8;
         }
 
+        .nav-bar {
+            background: rgba(255,255,255,0.95);
+            padding: 20px 0;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #16a085;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background-color: #16a085;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3);
+        }
+
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
             .header p { font-size: 1rem; }
             .main-content { padding: 20px; }
             .features { grid-template-columns: 1fr; }
+            .nav-links { 
+                flex-direction: column; 
+                gap: 15px; 
+                align-items: center; 
+            }
+            .nav-bar { padding: 15px 0; }
         }
     </style>
 </head>
@@ -206,6 +247,14 @@
         </header>
 
         <main class="main-content">
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="start-here.html">🚀 Start Here</a></li>
+                    <li><a href="log-on.html">📝 Log On</a></li>
+                    <li><a href="the-talk.html">💬 The Talk</a></li>
+                </ul>
+            </nav>
+
             <section class="intro">
                 <h2>Welcome to the Turtle Methodology</h2>
                 <p>Unlike typical productivity systems that focus on speed and efficiency, TurtleTalk embraces the wisdom of the turtle: consistent, deliberate progress toward meaningful goals.</p>
@@ -280,7 +329,6 @@
                 <p>Access the interactive planner or download a printable PDF version</p>
                 <a href="turtle-planner.html" class="btn">🐢 View Turtle Planner</a>
                 <a href="turtle_diaries_planner.pdf" class="btn">📄 Download PDF Planner</a>
-                <a href="turtleplanner.py" class="btn btn-secondary">📥 Download PDF Script</a>
             </section>
 
             <section class="methodology">

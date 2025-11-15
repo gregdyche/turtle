@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Log On - TurtleTalk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #16a085 0%, #2c3e50 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .nav-bar {
+            background: rgba(255,255,255,0.95);
+            padding: 20px 0;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #16a085;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background-color: #16a085;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3);
+        }
+
+        .nav-links a.active {
+            background-color: #16a085;
+            color: white;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #16a085;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .check-in-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .check-in-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 6px solid #16a085;
+        }
+
+        .check-in-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check-in-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .check-in-card ul {
+            color: #666;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .check-in-card .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #16a085;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .check-in-card .btn:hover {
+            background: #1abc9c;
+            transform: translateY(-2px);
+        }
+
+        .tracking-section {
+            background: linear-gradient(45deg, #ecf0f1, #bdc3c7);
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .tracking-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .tracking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #16a085;
+        }
+
+        .metric-card .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        .metric-card .label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .review-schedule {
+            background: #16a085;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .review-schedule h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .review-schedule p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .schedule-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .schedule-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .schedule-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .header p { font-size: 1rem; }
+            .main-content { padding: 20px; }
+            .check-in-grid { grid-template-columns: 1fr; }
+            .nav-links { 
+                flex-direction: column; 
+                gap: 15px; 
+                align-items: center; 
+            }
+            .nav-bar { padding: 15px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 Log On</h1>
+            <p>Track your progress and stay on the turtle path</p>
+        </header>
+
+        <main class="main-content">
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="start-here.html">🚀 Start Here</a></li>
+                    <li><a href="log-on.html" class="active">📝 Log On</a></li>
+                    <li><a href="the-talk.html">💬 The Talk</a></li>
+                </ul>
+            </nav>
+
+            <section class="intro">
+                <h2>Your Turtle Journey Check-In</h2>
+                <p>Consistency is the turtle's superpower. Regular check-ins keep you moving steadily toward your Eastward Gaze.</p>
+                <p>Use these tools to track your progress, reflect on your journey, and make course corrections when needed.</p>
+            </section>
+
+            <section class="check-in-grid">
+                <div class="check-in-card">
+                    <h3>📅 Daily Check-In</h3>
+                    <p>Start each day with intention and end with reflection.</p>
+                    <ul>
+                        <li>Morning: What's my deliberate first step?</li>
+                        <li>Midday: Am I on track? Having fun?</li>
+                        <li>Evening: What act of love did I practice?</li>
+                    </ul>
+                    <a href="turtle-planner.html#daily" class="btn">Open Daily Page</a>
+                </div>
+
+                <div class="check-in-card">
+                    <h3>📋 Weekly Review</h3>
+                    <p>Reflect on your weekly intentions and plan the next seven days.</p>
+                    <ul>
+                        <li>Did I complete my weekly intentions?</li>
+                        <li>What adjustments do I need to make?</li>
+                        <li>How will I protect my A-Zone next week?</li>
+                    </ul>
+                    <a href="turtle-planner.html#weekly" class="btn">Weekly Planning</a>
+                </div>
+
+                <div class="check-in-card">
+                    <h3>🗓️ Monthly Preview</h3>
+                    <p>Plan your big rocks and major milestones for the coming month.</p>
+                    <ul>
+                        <li>What are my 3 major monthly goals?</li>
+                        <li>How do they align with my Eastward Gaze?</li>
+                        <li>What calendar blocking do I need?</li>
+                    </ul>
+                    <a href="turtle-planner.html#monthly" class="btn">Monthly Planning</a>
+                </div>
+
+                <div class="check-in-card">
+                    <h3>🔍 Quarterly Assessment</h3>
+                    <p>Deep reflection using the turtle assessment framework.</p>
+                    <ul>
+                        <li>Direction: Am I moving toward my goal?</li>
+                        <li>Consistency: Are my habits working?</li>
+                        <li>Balance: Am I sustainable?</li>
+                        <li>Energy: Am I energized or burning out?</li>
+                    </ul>
+                    <a href="turtle-planner.html#quarterly" class="btn">Quarterly Review</a>
+                </div>
+            </section>
+
+            <section class="tracking-section">
+                <h3>🐢 Your Turtle Metrics</h3>
+                <p style="text-align: center; color: #666;">Track what matters to maintain your steady progress</p>
+                
+                <div class="tracking-grid">
+                    <div class="metric-card">
+                        <div class="number">___</div>
+                        <div class="label">Days of A-Zone Protection</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="number">___</div>
+                        <div class="label">Weekly Intentions Completed</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="number">___</div>
+                        <div class="label">Quarterly Reviews Done</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="number">___</div>
+                        <div class="label">Days Moving Eastward</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review-schedule">
+                <h3>🕒 Your Review Rhythm</h3>
+                <p>Set up a regular schedule to stay on course. Consistency in checking your compass is key to reaching your destination.</p>
+                
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <h4>Daily</h4>
+                        <p>Morning intention<br>Evening reflection<br>5 minutes total</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h4>Weekly</h4>
+                        <p>Intention review<br>Next week planning<br>15 minutes</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h4>Monthly</h4>
+                        <p>Big rocks planning<br>Calendar review<br>30 minutes</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h4>Quarterly</h4>
+                        <p>Deep assessment<br>Course correction<br>60 minutes</p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 6px solid #e74c3c; margin: 40px 0;">
+                <h3 style="color: #e74c3c; margin-bottom: 15px;">🚨 Early Warning Signs</h3>
+                <p style="margin-bottom: 15px; color: #666;">Watch for these signals that you might be drifting off course:</p>
+                <ul style="color: #666; margin-left: 20px;">
+                    <li>Skipping daily reflection for multiple days</li>
+                    <li>A-Zone time getting squeezed out regularly</li>
+                    <li>Feeling overwhelmed or constantly busy</li>
+                    <li>Missing weekly or monthly reviews</li>
+                    <li>Losing sight of your Eastward Gaze</li>
+                </ul>
+                <p style="margin-top: 20px; color: #666;"><strong>Remember:</strong> The turtle course-corrects early and often. Small adjustments keep you moving in the right direction.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Remember: The turtle wins the race not through speed, but through persistence and direction. 🐢</p>
+            <p><a href="index.html" style="color: white;">← Back to Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
