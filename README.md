@@ -7,7 +7,7 @@
 
 ## Overview
 
-A personal productivity planner based on the **turtle practice** - emphasizing consistent, deliberate progress toward meaningful goals through regular reflection and intentional planning.
+A personal leadership planner based on the **turtle practice** - emphasizing consistent, deliberate progress toward meaningful goals through regular reflection and intentional planning.
 
 Unlike typical productivity systems that focus on speed and efficiency, the turtle practice embraces:
 - 🎯 **Clear Direction**: Setting an "Eastward Gaze" - your true destination
