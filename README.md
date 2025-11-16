@@ -1,6 +1,6 @@
 # 🐢 Turtle Practice
 
-*A slow, steady, and deliberate approach to personal productivity and goal achievement*
+*A slow, steady, and deliberate approach to personal leadership and goal achievement*
 
 [![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
