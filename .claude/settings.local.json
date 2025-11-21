@@ -5,7 +5,8 @@
       "Bash(grep:*)",
       "Bash(git add:*)",
       "Bash(git push:*)",
-      "WebFetch(domain:gregdyche.com)"
+      "WebFetch(domain:gregdyche.com)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

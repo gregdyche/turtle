@@ -1,0 +1,512 @@
+/**
+ * Turtle Practice Custom Theme for Reveal.js
+ * "Steady & Grounded" - Professional, calming, purposeful
+ *
+ * Philosophy: Slow and steady wins the race
+ * Every element has purpose, nothing is frantic or busy
+ */
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+:root {
+  /* Brand Colors */
+  --turtle-green: #16a085;
+  --deep-teal: #138d75;
+  --soft-cream: #FAF8F3;
+  --warm-sand: #F5F5DC;
+  --charcoal: #2c3e50;
+  --slate-gray: #546e7a;
+  --earth-brown: #8B7355;
+  --coral-orange: #FF6B6B;
+  --sunset-gold: #D4A574;
+
+  /* Typography */
+  --heading-font: Georgia, 'Times New Roman', serif;
+  --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --quote-font: Georgia, 'Times New Roman', serif;
+}
+
+.reveal {
+  font-family: var(--body-font);
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--charcoal);
+}
+
+.reveal-viewport {
+  background: var(--soft-cream);
+  background-image: radial-gradient(circle at 20% 80%, rgba(22, 160, 133, 0.03) 0%, transparent 50%);
+}
+
+/*********************************************
+ * TYPOGRAPHY
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  word-wrap: break-word;
+  margin: 0 0 0.5em 0;
+}
+
+.reveal h1 {
+  font-size: 3.5em;
+  color: var(--turtle-green);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reveal h2 {
+  font-size: 2.5em;
+  color: var(--charcoal);
+}
+
+.reveal h3 {
+  font-size: 1.8em;
+  color: var(--slate-gray);
+}
+
+.reveal h4 {
+  font-size: 1.4em;
+  color: var(--charcoal);
+}
+
+/* Body text */
+.reveal p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+/* Links */
+.reveal a {
+  color: var(--turtle-green);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reveal a:hover {
+  color: var(--deep-teal);
+  text-shadow: none;
+  border-bottom: 2px solid var(--deep-teal);
+}
+
+/* Strong emphasis */
+.reveal strong,
+.reveal b {
+  color: var(--turtle-green);
+  font-weight: 600;
+}
+
+/* Emphasis */
+.reveal em {
+  font-style: italic;
+  color: var(--slate-gray);
+}
+
+/*********************************************
+ * QUOTES & BLOCKQUOTES
+ *********************************************/
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 1.5em auto;
+  padding: 1em 2em;
+  font-family: var(--quote-font);
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: var(--slate-gray);
+  background: rgba(22, 160, 133, 0.05);
+  border-left: 5px solid var(--turtle-green);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reveal blockquote p {
+  margin: 0;
+}
+
+.reveal blockquote:before {
+  content: '"';
+  font-size: 3em;
+  color: var(--turtle-green);
+  opacity: 0.3;
+  position: absolute;
+  left: 0.2em;
+  top: -0.1em;
+  font-family: Georgia, serif;
+}
+
+/*********************************************
+ * LISTS
+ *********************************************/
+
+.reveal ul,
+.reveal ol {
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ul {
+  list-style-type: none;
+}
+
+.reveal ul li:before {
+  content: "▸";
+  color: var(--turtle-green);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+.reveal ol li {
+  margin-left: 0;
+}
+
+/*********************************************
+ * SLIDE LAYOUT
+ *********************************************/
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+/* Center content for title slides */
+.reveal .slides > section:first-child {
+  text-align: center;
+}
+
+/*********************************************
+ * SPECIAL SLIDE CLASSES
+ *********************************************/
+
+/* Title Slide */
+.reveal .title-slide {
+  text-align: center;
+  background: linear-gradient(135deg, var(--deep-teal) 0%, var(--turtle-green) 100%);
+  color: white;
+}
+
+.reveal .title-slide h1 {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 0.3em;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal .title-slide p {
+  color: var(--soft-cream);
+  font-size: 1.3em;
+}
+
+/* Quote Slide - Full screen inspirational quote */
+.reveal .quote-slide {
+  background: var(--turtle-green);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .quote-slide blockquote {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2em;
+  box-shadow: none;
+  width: 90%;
+}
+
+.reveal .quote-slide blockquote:before {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Emphasis Slide - Single powerful statement */
+.reveal .emphasis-slide {
+  background: var(--charcoal);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .emphasis-slide h2 {
+  color: var(--turtle-green);
+  font-size: 3.5em;
+}
+
+/* Section Transition Slide */
+.reveal .section-slide {
+  background: linear-gradient(135deg, var(--earth-brown) 0%, var(--sunset-gold) 100%);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .section-slide h2 {
+  color: white;
+  font-size: 3em;
+}
+
+/*********************************************
+ * HIGHLIGHTING & ACCENTS
+ *********************************************/
+
+.reveal .highlight {
+  color: var(--coral-orange);
+  font-weight: 600;
+}
+
+.reveal .accent {
+  color: var(--turtle-green);
+  font-weight: 600;
+}
+
+.reveal .subtle {
+  color: var(--slate-gray);
+  font-size: 0.9em;
+}
+
+/*********************************************
+ * CODE & PREFORMATTED TEXT
+ *********************************************/
+
+.reveal pre {
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reveal code {
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(44, 62, 80, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: var(--deep-teal);
+}
+
+.reveal pre code {
+  background: var(--charcoal);
+  color: var(--soft-cream);
+  padding: 1em;
+  border-radius: 8px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+/*********************************************
+ * TABLES
+ *********************************************/
+
+.reveal table {
+  margin: 1em auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reveal table th {
+  font-weight: 600;
+  background: var(--turtle-green);
+  color: white;
+  padding: 0.8em 1em;
+  text-align: left;
+}
+
+.reveal table td {
+  padding: 0.8em 1em;
+  border-bottom: 1px solid var(--warm-sand);
+}
+
+.reveal table tbody tr:hover {
+  background: rgba(22, 160, 133, 0.05);
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal img {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal img.plain {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Image with caption */
+.reveal figure {
+  margin: 1em 0;
+}
+
+.reveal figcaption {
+  font-size: 0.8em;
+  color: var(--slate-gray);
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+
+.reveal .progress span {
+  background: var(--turtle-green);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * SLIDE NUMBERS
+ *********************************************/
+
+.reveal .slide-number {
+  background-color: var(--turtle-green);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.6em;
+  font-family: var(--body-font);
+}
+
+/*********************************************
+ * CONTROLS
+ *********************************************/
+
+.reveal .controls {
+  color: var(--turtle-green);
+}
+
+.reveal .controls button {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.reveal .controls button:hover {
+  opacity: 1;
+}
+
+/*********************************************
+ * TRANSITIONS
+ *********************************************/
+
+/* Slow, deliberate transitions - embodying turtle philosophy */
+.reveal .slides section {
+  transition: all 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * UTILITIES
+ *********************************************/
+
+.reveal .text-center {
+  text-align: center;
+}
+
+.reveal .text-left {
+  text-align: left;
+}
+
+.reveal .text-right {
+  text-align: right;
+}
+
+.reveal .small {
+  font-size: 0.8em;
+}
+
+.reveal .large {
+  font-size: 1.3em;
+}
+
+.reveal .mt-2 {
+  margin-top: 2em;
+}
+
+.reveal .mb-2 {
+  margin-bottom: 2em;
+}
+
+/*********************************************
+ * RESPONSIVE
+ *********************************************/
+
+@media screen and (max-width: 768px) {
+  .reveal h1 {
+    font-size: 2.5em;
+  }
+
+  .reveal h2 {
+    font-size: 2em;
+  }
+
+  .reveal .slides > section,
+  .reveal .slides > section > section {
+    padding: 1em;
+  }
+}
+
+/*********************************************
+ * PRINT STYLES
+ *********************************************/
+
+@media print {
+  .reveal {
+    background: white;
+  }
+
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    color: var(--charcoal);
+  }
+
+  .reveal a {
+    color: var(--turtle-green);
+    text-decoration: underline;
+  }
+}
