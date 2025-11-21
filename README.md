@@ -8,17 +8,9 @@
 
 A personal leadership planner based on the **turtle practice** - emphasizing consistent, deliberate progress to a meaningful life through regular, ordinay days using reflection and intentional planning.
 
-🌐 **Turtle Talk**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle/turtle_talk_slides.html)
+🐢 **Turtle Talk**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle/turtle_talk_slides.html)
 
-🌐 **Turtle Journal**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle)
-
-
-Unlike typical productivity systems that focus on speed and efficiency, the turtle practice embraces:
-- 🎯 **Clear Direction**: Setting an "Eastward Gaze" - your true destination
-- 🔄 **Regular Reflection**: Daily, weekly, quarterly, and yearly review cycles
-- ⚡ **A-Zone Protection**: Safeguarding time for your most important work
-- 🚫 **Intentional Elimination**: Deliberately choosing what NOT to do
-- 💚 **Sustainable Pace**: Building habits that last through consistent small actions
+🐢 **Turtle Journal**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle)
 
 ## Features
 
@@ -33,12 +25,6 @@ Unlike typical productivity systems that focus on speed and efficiency, the turt
 - **HTML Version**: Type directly in browser, print as needed
 - **Professional PDF Output**: Clean, printable design for physical planning
 - **GitHub Pages Hosting**: Access from anywhere via web browser
-- **Turtle-themed styling** with consistent design across all formats
-
-✅ **Proven Frameworks**
-- **Turtle Assessment**: Direction, Consistency, Balance, Energy evaluation
-- **A/B/C Zone Prioritization**: Clear task categorization
-- **Pay Yourself First**: Protected time for personal growth projects
 
 ## Installation & Usage
 
@@ -82,63 +68,6 @@ This creates `turtle_diaries_planner.pdf` with all five page templates ready for
 **GitHub Pages Access**
 When hosted on GitHub Pages, access the planner at:
 `https://gregdyche.github.io/turtle/`
-
-### Recommended Printing
-- **1x** Yearly Outlook (print once per year)
-- **4x** Quarterly Review (one per quarter)
-- **12x** Monthly Preview (one per month)
-- **52x** Weekly Planning (one per week)
-- **365x** Daily Pages (or print weekly batches)
-
-## The Five Page Templates
-
-### 🎯 Yearly Outlook
-Set your annual direction with four key sections:
-- **Eastward Gaze**: Your single most important destination this year
-- **The Must-Be**: Personal growth commitment
-- **Pay Yourself First**: Daily personal project commitment
-- **The Non-Agenda**: Three specific things you'll stop doing
-
-### 🔍 Quarterly Review
-Assess your progress using the turtle practice framework:
-- **Direction**: Are you moving steadily toward your Eastward Gaze?
-- **Consistency**: Are you maintaining sustainable progress and working habits?
-- **Balance**: Are you protecting A-Zone time while maintaining relationships?
-- **Energy**: Do you feel energized by your work without burning out?
-
-### 🗓️ Monthly Preview
-Plan your month strategically:
-- **Calendar Grid**: Visual month layout for key dates
-- **Monthly Big Rocks**: Three major milestones to achieve
-
-### 📋 Weekly Planning & Reflection
-Bridge the gap between strategy and daily action:
-- **Weekly Intentions**: Five specific, measurable weekly actions
-- **A-Zone Protection**: Time blocking for priority work
-- **Learning & Adjustment**: Weekly process improvements
-
-### 📝 Daily Page
-Your daily navigation tool:
-- **Morning Start**: First deliberate action
-- **A-Zone Block**: Protected time for major work
-- **Midday Examen**: Quick check-in (on-track? having fun?)
-- **B/C-Zone Tasks**: Secondary task checklist
-- **Evening Reflection**: Acts of love and tomorrow's preparation
-
-## The Turtle Methodology
-
-### Core Principles
-
-1. **🧭 Eastward Direction**: Like migrating turtles, maintain clear directional movement toward your true destination
-2. **🏃‍♂️ A-Zone First**: Protect time for your most important work before everything else
-3. **🔄 Regular Reflection**: Build in systematic review cycles to stay on course
-4. **⚖️ Intentional Balance**: Deliberately choose what to pursue and what to eliminate
-5. **🌱 Sustainable Growth**: Focus on consistency over intensity for lasting change
-
-### Zone System
-- **A-Zone**: Your most important work that moves you toward your Eastward Gaze
-- **B-Zone**: Important but secondary tasks
-- **C-Zone**: Low-priority activities that can wait or be eliminated
 
 ## Technical Details
 
