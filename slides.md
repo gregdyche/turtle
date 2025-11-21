@@ -10,8 +10,8 @@ gregdyche@creighton.edu
 
 ## What’s my job?  
 Who am I?  
-> Husband  
-> Father  
+* Husband  
+- Father  
 > Professor  
 > Friend  
 
@@ -37,7 +37,7 @@ You'll have the tools to adjust and get back on course.
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; align-items: center;">
   <div>
-    <h2 style="margin-top: 0;">Career is off to a great start</h2>    
+    <h2 style="margin-top: 0;">Off to a great start</h2>    
   </div>
   <div>
     <img src="images/500px-The_Tortoise_and_the_Hare_-_Project_Gutenberg_etext_19994.jpg" alt="Tortoise and the Hare" style="max-width: 100%; height: auto;">
