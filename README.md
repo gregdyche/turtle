@@ -6,7 +6,7 @@
 
 ## Overview
 
-A personal leadership planner based on the **turtle practice** - emphasizing consistent, deliberate progress to a meaningful life through regular, ordinay days using reflection and intentional planning.
+A personal leadership planner based on the **turtle practice**.
 
 🐢 **Turtle Talk**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle/turtle_talk_slides.html)
 
