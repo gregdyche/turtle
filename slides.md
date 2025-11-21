@@ -1,7 +1,3 @@
----
-marp: true
----
-
 # Turtle Practice  
 Ordinary day that leads to extraordinary life.  
 gregdyche@creighton.edu  
@@ -10,10 +6,10 @@ gregdyche@creighton.edu
 
 ## What’s my job?  
 Who am I?  
-* Husband  
+- Husband  
 - Father  
-> Professor  
-> Friend  
+- Professor  
+- Friend  
 
 [LinkedIn](https://www.linkedin.com/in/gregdyche)
 
