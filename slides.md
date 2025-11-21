@@ -1,0 +1,269 @@
+# Turtle Talk  
+Ordinary day that leads to extraordinary life.  
+gregdyche@creighton.edu  
+
+---
+
+## What’s my job?  
+Who am I?  
+- Husband  
+- Father  
+- Professor  
+- Friend  
+
+[LinkedIn](https://www.linkedin.com/in/gregdyche)
+
+---
+
+## Looking out the window
+
+---
+
+## Today’s Promise  
+Work with me for the next few minutes, and you’ll walk away with a plan—  
+a routine that leads to success.  
+You’ll have the tools to adjust and get back on course.
+
+---
+
+## Career is off to a great start
+
+---
+
+## Starting to wonder  
+- How to do more isn’t obvious.  
+- Worked the last 3 weekends in a row.  
+- Missing a 3-day trip with friends.  
+
+So… this is what burnout starts to feel like.  
+**Human Being or Human Doing?**
+
+“You don’t have the right to be a lump on a log.”
+
+---
+
+## Lights out  
+I remember the day when the lights turned off and the wind was blowing snow.
+
+> “What you can be, you must be.”  
+> —Abraham Maslow
+
+Foundational needs first.  
+**Maslow matters.**
+
+---
+
+## Who do you aspire to be?  
+Don’t worry about *what* you want to do—  
+not yet.
+
+---
+
+## Drucker’s 5 Questions  
+- What do you want to be remembered for?  
+- Who do you want to be remembered by?  
+- What do **they** find important (not you)?  
+- How will you measure their value?  
+- What’s your plan?  
+
+*Ask every 6 months.*
+
+---
+
+## Get excited  
+Your player has a hot hand.
+
+---
+
+## Nope  
+Only temporary success.  
+There’s no such thing as a real hot hand in basketball.
+
+What matters is **the routine**.
+
+> It’s not the will to win—everyone has that.  
+> It’s the **will to practice**.
+
+Let’s use this to our advantage and build a daily routine that wins.
+
+---
+
+## Standards and Habits  
+**Three Daily Zones**
+
+---
+
+## Not enough of you to go around  
+Who gets the best of you?  
+Who gets your “A” game?
+
+Who gets the most of you during the A-zone?
+
+The secret scorecard:  
+**How do we treat others?**
+
+---
+
+## A-Zone check  
+What’s in your A-zone—anything for *you*?
+
+- Early sunshine  
+- Exercise  
+- Planned eating  
+- Journal / gratitude  
+- Meditate  
+- Time with loved ones  
+
+Remember, the tortoise had a plan for race day.
+
+---
+
+## Simple truths  
+Some is better than none.  
+Now is better than later.
+
+---
+
+## Daily Zones (example)
+
+### A Zone — *7am to 1pm*  
+- Decent breakfast  
+- Sunlight  
+- Gratitude journal  
+- Prayer, meditation  
+- Reflection
+
+### B Zone — *2pm to 7pm*  
+- Open meetings  
+- What-if journaling  
+- Block time for family
+
+---
+
+## Best work to do in the A Zone  
+- New ideas  
+- Study  
+- Move the most important project forward  
+- Index card:  
+  - First task  
+  - Second task  
+  - Third task  
+
+---
+
+## Build a test Turtle-Day for summer  
+What does a typical good day look like?
+
+- A: start time + primary rocks  
+- B: start time + primaries  
+- C: rest + process  
+- Sleep goal  
+
+Write out a test schedule so you have something to edit.
+
+---
+
+## Best time to plant a shade tree?  
+20 years ago.  
+Next best time? **Today.**
+
+Don’t allow the shame of delay to stall your start.  
+Write out an ordinary routine.
+
+You get the best of you,  
+so you can be strong enough to help others.
+
+What are you going to **not-do**?
+
+---
+
+## Why doesn’t it work?  
+This isn’t new advice.  
+Age-old, simple advice is the answer.
+
+So why don’t you follow it?  
+**Did you hear the alarm?**
+
+---
+
+## Early Warning System  
+Your superpower: **Reflection**
+
+The Examen  
+- Noon check-in  
+- On track?  
+- Having fun? (getting energy from your work)
+
+---
+
+## Call your shots  
+Tell me what you’ve **done**, not what you’re going to do.
+
+- Write down your intentions for the week  
+- Review at the end  
+- Did you accomplish them?  
+- Why not?  
+
+This isn’t a critique.  
+It’s a conversation.
+
+Honest dialogue with the mirror  
+(or a coach if you’re fortunate)
+
+Won’t do?  
+Can’t do?
+
+---
+
+## Daily A-Zone traps  
+- Open a “start here” document first  
+- Set Outlook to open to calendar, not email  
+- If you can delete the email → trash it  
+- If you can answer in <2 min → just do it  
+- If it takes thought → schedule it  
+- Not a to-do list—it’s a wish list  
+- Ask: **When?** Put the work on the calendar  
+- Want less email? Send less email  
+  - Call, visit, text, message—anything but email  
+
+---
+
+## Daily A-Zone dangers  
+Operate vs Lead
+
+Sit down to work and don’t look up till lunch.
+
+Lead your day or get pulled along by the urgent.
+
+Work on tomorrow:  
+What can you prep today to make tomorrow better?
+
+---
+
+## B-Zone ideas  
+- More creative endeavors  
+- When you’re a little tired, your guard drops  
+- You’re more open to new ideas  
+- Careful: impulse shopping goes up here  
+- Brainstorm  
+- Write  
+- Follow up with friends and family  
+
+---
+
+## Build an ordinary Tuesday  
+A typical Tuesday that keeps you on course.  
+A typical Tuesday that becomes your average.  
+Your routine for when you get tired.  
+Return to the mean.
+
+You have a plan started today.  
+Adjust it.  
+Make it your own.  
+Leave room for fun.  
+Do it your way.
+
+---
+
+## If you walk away with one slide…  
+Greg Dyche
