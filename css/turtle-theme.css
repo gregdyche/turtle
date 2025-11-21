@@ -473,17 +473,123 @@
  *********************************************/
 
 @media screen and (max-width: 768px) {
+  .reveal {
+    font-size: 18px;
+  }
+
   .reveal h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    line-height: 1.1;
   }
 
   .reveal h2 {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+
+  .reveal h3 {
+    font-size: 1.3em;
+  }
+
+  .reveal h4 {
+    font-size: 1.1em;
+  }
+
+  .reveal .slides > section,
+  .reveal .slides > section > section {
+    padding: 1.5em;
+  }
+
+  .reveal p {
+    line-height: 1.5;
+    margin: 0.8em 0;
+  }
+
+  .reveal li {
+    margin: 0.4em 0;
+    line-height: 1.5;
+  }
+
+  /* Better image sizing for mobile */
+  .reveal img {
+    max-width: 95% !important;
+    height: auto;
+  }
+
+  /* Blockquotes more compact */
+  .reveal blockquote {
+    width: 95%;
+    padding: 0.8em 1em;
+    font-size: 1.1em;
+    margin: 1em auto;
+  }
+
+  .reveal blockquote:before {
     font-size: 2em;
+  }
+
+  /* Larger touch targets for controls */
+  .reveal .controls button {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Larger slide numbers for easier reading */
+  .reveal .slide-number {
+    font-size: 0.8em;
+    padding: 8px 12px;
+  }
+
+  /* Reduce excessive margins */
+  .reveal ul,
+  .reveal ol {
+    margin: 0 0 0 0.8em;
+  }
+
+  /* Better table display on mobile */
+  .reveal table {
+    font-size: 0.85em;
+  }
+
+  .reveal table th,
+  .reveal table td {
+    padding: 0.5em 0.7em;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media screen and (max-width: 480px) {
+  .reveal {
+    font-size: 16px;
+  }
+
+  .reveal h1 {
+    font-size: 1.8em;
+  }
+
+  .reveal h2 {
+    font-size: 1.4em;
   }
 
   .reveal .slides > section,
   .reveal .slides > section > section {
     padding: 1em;
+  }
+
+  .reveal blockquote {
+    font-size: 1em;
+    padding: 0.6em 0.8em;
+  }
+
+  /* Stack content more tightly */
+  .reveal p {
+    margin: 0.6em 0;
+  }
+
+  /* Even larger touch targets */
+  .reveal .controls button {
+    width: 50px;
+    height: 50px;
   }
 }
 
