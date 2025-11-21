@@ -2,12 +2,16 @@
 
 *A slow, steady, and deliberate approach to personal leadership and an ordinary day*
 
-[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
-A personal leadership planner based on the **turtle practice** - emphasizing consistent, deliberate progress toward meaningful days through regular reflection and intentional planning.
+A personal leadership planner based on the **turtle practice** - emphasizing consistent, deliberate progress to a meaningful life through regular, ordinay days using reflection and intentional planning.
+
+🌐 **Turtle Talk**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle/turtle_talk_slides.html)
+
+🌐 **Turtle Journal**: [gregdyche.github.io/turtle](https://gregdyche.github.io/turtle)
+
 
 Unlike typical productivity systems that focus on speed and efficiency, the turtle practice embraces:
 - 🎯 **Clear Direction**: Setting an "Eastward Gaze" - your true destination
