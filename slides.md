@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Turtle Practice  
 Ordinary day that leads to extraordinary life.  
 gregdyche@creighton.edu  
@@ -6,10 +10,10 @@ gregdyche@creighton.edu
 
 ## What’s my job?  
 Who am I?  
-  Husband  
-  Father  
-  Professor  
-  Friend  
+> Husband  
+> Father  
+> Professor  
+> Friend  
 
 [LinkedIn](https://www.linkedin.com/in/gregdyche)
 
@@ -18,22 +22,26 @@ Who am I?
 ## Looking out the window
 
 <div style="text-align: center;">
-  <img src="images/73-1580_Lockheed_EC-130H_Compass_Call_(framed).jpg" alt="C-130H Aircraft" style="max-width: 100%; height: auto;">
+  <img src="images/73-1580_Lockheed_EC-130H_Compass_Call_(framed).jpg" alt="C-130H Aircraft" style="max-width: 80%; height: auto;">
 </div>
 
 ---
 
 ## Today's Promise
+
 Work with me for the next few moments, and you'll walk away with a plan, a routine that leads to success.
 
 You'll have the tools to adjust and get back on course.
 
 ---
 
-## Career is off to a great start
-
-<div style="text-align: center;">
-  <img src="images/500px-The_Tortoise_and_the_Hare_-_Project_Gutenberg_etext_19994.jpg" alt="Tortoise and the Hare" style="max-width: 100%; height: auto;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; align-items: center;">
+  <div>
+    <h2 style="margin-top: 0;">Career is off to a great start</h2>    
+  </div>
+  <div>
+    <img src="images/500px-The_Tortoise_and_the_Hare_-_Project_Gutenberg_etext_19994.jpg" alt="Tortoise and the Hare" style="max-width: 100%; height: auto;">
+  </div>
 </div>
 
 ---
