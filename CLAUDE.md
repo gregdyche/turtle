@@ -25,8 +25,8 @@ turtletalk/
   - Professional PDF layout with tables, checklists, and structured sections
 
 ### `requirements.txt`
-- Contains: `google-genai>=0.1.0` (though not used in main script)
-- Missing: `reportlab` dependency (should be added)
+- `reportlab>=4.0.0` (used by `turtleplanner.py`)
+- `google-genai>=0.1.0` (not imported anywhere in the repo)
 
 ## The Five Page Templates
 
@@ -110,7 +110,8 @@ python turtleplanner.py
 - Generate individual page types separately
 - Add digital form fields for PDF completion
 
-## Git Status
-- Current branch: `main`
-- Repository is clean with recent commits including initial setup
-- Ready for collaborative development
+## CI
+- `.github/workflows/generate-pdf.yml` regenerates and commits `turtle_diaries_planner.pdf` on push to `main` when `turtleplanner.py` or `requirements.txt` change.
+
+## Local settings
+- `.claude/settings.local.json` is ignored (machine-local permissions); do not track it.

@@ -77,15 +77,19 @@ When hosted on GitHub Pages, access the planner at:
 
 ### File Structure
 ```
-turtletalk/
-├── README.md                      # This file
-├── index.html                     # Landing page and entry point
-├── turtle-planner.html            # Interactive web-based planner
-├── requirements.txt               # Python dependencies
-├── turtleplanner.py              # PDF planner generation script
-├── CLAUDE.md                     # Development memory/notes
-├── Turtle talk Greg Dyche.pptx   # Presentation materials
-└── turtle_diaries_planner.pdf    # Generated planner output
+turtle/
+├── README.md                  # This file
+├── CLAUDE.md                  # Development notes
+├── STYLE_GUIDE.md, SCRIBE.md  # Writing and style notes
+├── index.html                 # Landing page (GitHub Pages)
+├── turtle-planner.html        # Interactive web planner
+├── turtle_talk_slides.html    # Turtle Talk slides (built from slides.md)
+├── slides.md                  # Slide source
+├── css/, images/              # Slide theme and images
+├── turtleplanner.py           # PDF planner generator
+├── requirements.txt           # Python dependencies
+├── turtle_diaries_planner.pdf # Generated planner (auto-updated by CI)
+└── .github/workflows/         # generate-pdf.yml regenerates the PDF on push to main
 ```
 
 ### Design System
@@ -127,7 +131,7 @@ Similarly, this planner system encourages:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. (No LICENSE file is in the repo yet.)
 
 ## Author
 
